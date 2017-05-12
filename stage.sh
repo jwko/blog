@@ -1,11 +1,11 @@
 #!/bin/bash
 
-rm -Rf ../jermolene-blog.github.io/*
+#rm -Rf ../jwko.github.io/*
 
-cp -R main-wiki/output/* ../jermolene-blog.github.io/
+cp -R main-wiki/output/* ../jwko.github.io/
 
-mkdir -p ../jermolene-blog.github.io/talkytalky/
+mkdir -p ../jwko.github.io/talkytalky/
 
-cp -R talkytalky-wiki/output/* ../jermolene-blog.github.io/talkytalky/
+cp -R talkytalky-wiki/output/* ../jwko.github.io/talkytalky/
 
-cp -R static-assets/* ../jermolene-blog.github.io/
+cp -R static-assets/* ../jwko.github.io/
