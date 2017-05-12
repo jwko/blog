@@ -2,7 +2,7 @@
 
 # Deploy latest build to github
 
-pushd ../jermolene-blog.github.io
+pushd ../jwko.github.io
 
 git add --all || exit 1
 
