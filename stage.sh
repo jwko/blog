@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#rm -Rf ../jwko.github.io/*
+rm -Rf ../jwko.github.io/*
 
 cp -R main-wiki/output/* ../jwko.github.io/
 

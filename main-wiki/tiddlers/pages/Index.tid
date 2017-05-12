@@ -1,7 +1,10 @@
-title: index
-caption: Jermolene.com
+caption: jwko.github.io
+created: 20170512211035828
+modified: 20170512212001201
 tags: page
+title: index
+type: text/vnd.tiddlywiki
 
-//A weblog by [[Jeremy Ruston|About]]//
+//A weblog by Jean, généré par tiddlywiki//
 
 <<timeline subfilter:"tag[post]!tag[unlisted]!sort[created]">>
