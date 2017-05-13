@@ -1,24 +1,28 @@
-# http://jermolene.com
+# http://jwko.github.io
 
-This is the source code for my blog which you will find at http://jermolene.com.
+Voici le code source du blog que vous trouverez à l'adresse  http://jwko.github.io.
+Je m'inspire du dépôt de Jermolen-blog/blog dont l'original est à l'adresse : https://github.com/Jermolene-blog/blog
+Ce fichier Lisez-moi en est une adaptation.
 
-It is created using TiddlyWiki running under Node.js, generating static HTML files that are hosted in GitHub Pages.
+Il est crée à partir de Tiddlywiki qui s'execute sous Node.js.
 
-## Contents
+Le plugin tiddlywiki/blog , permet de générer des fichiers static HTML pouvant être hébergés à travers les GitHub Pages.
 
-This repository contains the following top level folders:
+## Contenu
 
-* **archive**: content archived from older versions of jermolene.com
-* **artwork**: artwork for favicons, animated gifs etc
-* **main-wiki**: the content of the main wiki comprising the blog
-* **main-wiki-server**: an indirected version of the main wiki suitable for using in the client-server configuration
-* **static-assets**: static assets to the copied unchanged to the output
-* **talkytalky-wiki**: the content of the wiki making up http://jermolene.com/talkytalky
-* **talkytalky-wiki-server**: an indirected version of the wiki making up http://jermolene.com/talkytalky suitable for using in the client-server configuration
+Ce dépôt contient les premiers répértoires:
+
+* **archive**: archive d'une ancienne version version de jermolene.com
+* **artwork**: artwork pour favicons, gifs animés etc
+* **main-wiki**: Le contenu principal du wiki incluant le blog
+* **main-wiki-server**: Une version du wiki en mode configuration client-server.
+* **static-assets**: Les assets statiques qui sont recopiés dans le répertoire output
+* **talkytalky-wiki**: Le contenu d'un wiki de présentation du making up http://jermolene.com/talkytalky
+* **talkytalky-wiki-server**: Version du wiki de présentation du making up http://jermolene.com/talkytalky en mode de configuration client-server
 
 ## Batch Scripts
 
-The batch scripts assume a directory layout like this:
+Les Scripts batch supposent la hiérarchie suivante :
 
 ```
 
@@ -26,13 +30,16 @@ The batch scripts assume a directory layout like this:
  |
  +--+- **blog**
     |
-    +- **jermolene-blog.github.io**
+    +- **jwko.github.io**
 ```
 
-In other words, the folder containing this repository should be a sibling of a folder called "jermolene-blog.github.io" that will contain the output static files.
+Le répertoire contenant ce dépôt est un peu le petit frère ou la petite soeur du répertoire "jwko.github.io" qui contiendra la sortie des fichiers html static générés.
+Voici, dans l'ordre de passage, les scripts permettant d'alimenter, de construire, de jouer la copie dans le répertoire cible et enfin, de pousser les modifications 
+dans le dépôt distant.
 
-* **bld.sh**: build all the components of the site, leaving them in the wiki output folders
-* **github-push.sh**: push the "jermolene-blog.github.io" folder to GitHub
-* **serve.sh**: serve the main wiki at http://127.0.0.1:8080
-* **stage.sh**: copy all the output components across to the "jermolene-blog.github.io" folder
-* **talkytalky-serve.sh**: serve the talkytalky wiki at http://127.0.0.1:8080
+* **serve.sh**: execute le serveur pour le main wiki en local à http://127.0.0.1:8080
+* **bld.sh**: Construit les composants du site, les fichiers de sortie se trouvant ainsi dans le répertoire output
+* **stage.sh**: Copie les composants dans le réperoire "jwko.github.io"
+* **github-push.sh**: pousse le répertoire "jwko.github.io" sur GitHub
+
+* **talkytalky-serve.sh**: execute le serveur du talkytalky wiki à http://127.0.0.1:8080
